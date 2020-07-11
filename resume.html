@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Curriculum Vitae</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: "Roboto",sans-serif;
+            background-color: #f1f1f1;
+        }
+        .container{
+            position: relative;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+            margin-bottom:20px;
+        }
+        .left-div{
+            position: relative;
+            width:100%;
+            background-color: white;
+            box-shadow: 0px 0px 5px black;
+        }
+        .right-div{
+            width: 100%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0px 0px 5px black;
+        }
+        .header-img{
+            position: relative;
+        }
+        .name{
+            color:white;
+            text-shadow: 2px 2px 2px black;
+            margin:0;
+            font-weight: 700;
+        }
+        .name-div{
+            position: absolute;
+            bottom:10px;
+            left:10px;
+        }
+        .list-item{
+            padding:10px;
+            padding-left: 20px;
+            margin:0;
+            font-size: 15px;
+            font-weight: 300;
+            color:rgba(0,0,0,0.8);
+        }
+        i{
+            color:red;
+            margin-right:20px;
+        }
+        .heading{
+            color:rgba(0,0,0,0.8);
+            font-size: 20px;
+            margin:0;
+            padding-left: 20px;
+            font-weight: bold;
+        }
+        .skills-heading{
+            margin:0;
+            margin-bottom: 7px;
+            margin-top: 10px;
+        }
+        .prg-bar{
+            position: relative;
+            height: 5px;
+            background-color: #ccc;
+        }
+        span{
+            position: absolute;
+            background-color: red;
+            height:100%;
+        }
+        .heading-2{
+            font-size: 28px;
+            padding:20px;
+            margin:0;
+            padding-bottom: 7px;
+            color:black;
+        }
+        .sub-heading{
+            font-size: 18px;
+            color: gray;
+            font-weight: bold;
+        }
+        .projects-div{
+            width:100%;
+            box-shadow: 0px 0px 5px black;
+            padding:10px;
+            background-color: white;
+        }
+        .project{
+            position: relative;
+            width:250px;
+            height:250px;
+            box-shadow: 0px 0px 5px #ccc;
+            border-radius:10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .project:last-child{
+            box-shadow: none;
+        }
+        .project>a{
+            display: none;
+            position: absolute;
+            top:45%;
+            left:25%;
+        }
+        .project>a:last-child{
+            display: block;
+        }
+        .project:hover{
+            box-shadow: 0px 0px 5px #000;
+        }
+        .project:hover>a{
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .right-div {
+            margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 left-div p-0">
+                <div class="header-img">
+                    <img src="myself.jpg" width="100%" height="300px"/>
+                    <div class="name-div"><h2 class="name">Sachin Rana</h2></div>
+                </div>
+                <div class="p-2">
+                    <p class="list-item"><i class="fa fa-briefcase"></i>Full Stack Developer</p>
+                    <p class="list-item"><i class="fa fa-home"></i>Howrah, WB, IN</p>
+                    <p class="list-item"><i class="fa fa-envelope"></i>sachin25041998@gmail.com</p>
+                    <p class="list-item"><i class="fa fa-phone"></i>+91 - (898) 1895**3</p>
+                    <hr>
+                    <p class="heading"><i class="fa fa-certificate"></i>Skills</p>
+                    <p class="skills-heading">Core Java</p>
+                    <div class="prg-bar">
+                        <span style="width:85%"></span>
+                    </div>
+                    <p class="skills-heading">Advanced Java</p>
+                    <div class="prg-bar">
+                        <span style="width:75%"></span>
+                    </div>
+                    <p class="skills-heading">Android App Development</p>
+                    <div class="prg-bar">
+                        <span style="width:90%"></span>
+                    </div>
+                    <p class="skills-heading">Javascript</p>
+                    <div class="prg-bar">
+                        <span style="width:60%"></span>
+                    </div>
+                    <p class="skills-heading">Node JS</p>
+                    <div class="prg-bar">
+                        <span style="width:70%"></span>
+                    </div>
+                    <p class="skills-heading">Java FX</p>
+                    <div class="prg-bar">
+                        <span style="width:75%"></span>
+                    </div>
+                    <p class="skills-heading">Web UI / UX Design</p>
+                    <div class="prg-bar">
+                        <span style="width:78%"></span>
+                    </div>
+                    <p class="skills-heading">Machine Learning</p>
+                    <div class="prg-bar">
+                        <span style="width:65%"></span>
+                    </div>
+                    <p class="skills-heading">Deep Learning</p>
+                    <div class="prg-bar">
+                        <span style="width:60%"></span>
+                    </div>
+                    <hr>
+                    <p class="heading"><i class="fa fa-globe"></i>Languages</p>
+                    <p class="skills-heading">English</p>
+                    <div class="prg-bar">
+                        <span style="width:100%"></span>
+                    </div>
+                    <p class="skills-heading">Hindi</p>
+                    <div class="prg-bar">
+                        <span style="width:100%"></span>
+                    </div>
+                    <p class="skills-heading">Bengali</p>
+                    <div class="prg-bar">
+                        <span style="width:40%"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 p-0">
+                <div class="right-div ml-md-3">
+                    <p class="heading-2">
+                        <i class="fa fa-pencil-square-o"></i>Work Experience
+                    </p>
+                    <div style="padding:20px;padding-bottom: 5px;">
+                        <p class="sub-heading">Spring Microservices Developer Intern at Tata Consultancy Services</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>Jan 2020 - Apr 2020</p>
+                        <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis itaque perspiciatis, rerum voluptatibus deserunt facere repellat sed voluptatum. Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                        <hr>
+                        <p class="sub-heading">Android Developer Intern at Apsolutio Ltd</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>Dec 2018 - Jan 2019</p>
+                        <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis itaque perspiciatis, rerum voluptatibus deserunt facere repellat sed voluptatum. Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                    </div>
+                    <hr>
+                    <p class="heading-2">
+                        <i class="fa fa-graduation-cap"></i>Education
+                    </p>
+                    <div style="padding:20px;padding-bottom: 5px;">
+                        <p class="sub-heading">Heritage Institute Of Technology</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>July 2016 - June 2020</p>
+                        <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis itaque perspiciatis, rerum voluptatibus deserunt facere repellat sed voluptatum. Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                        <hr>
+                        <p class="sub-heading">Sudhir Memorial Institute</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>July 2014 - June 2016</p>
+                        <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis itaque perspiciatis, rerum voluptatibus deserunt facere repellat sed voluptatum. Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                    </div>
+                    <hr>
+                    <p class="heading-2">
+                        <i class="fa fa-trophy"></i>Awards & Publications
+                    </p>
+                    <div style="padding:20px;padding-bottom: 5px;">
+                        <p class="sub-heading">Dynamotion 2018 - Aptech</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>March 2018</p>
+                        <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis itaque perspiciatis, rerum voluptatibus deserunt facere repellat sed voluptatum. Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                        <hr>
+                        <p class="sub-heading">Smart India Hackathon - AICTE</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>April 2019</p>
+                        <p class="desc">Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                        <hr>
+                        <p class="sub-heading">ICCSEA 2020 - IEEE</p>
+                        <p class="date text-danger"><i class="fa fa-calendar"></i>April 2020</p>
+                        <p class="desc">Tenetur ratione rem debitis excepturi sequi non modi animi obcaecati dolore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 projects-div">
+                <p class="heading-2">
+                    <i class="fa fa-code"></i>Projects
+                </p>
+                <div class="d-flex flex-wrap justify-content-around p-4">
+                    <div class="project m-2">
+                        <a href="https://www.deeperinsights.herokuapp.com" target="_blank" class="btn btn-danger">View Project</a>
+                        <img src="project1.jpg" height="150%" width="150%" alt="Deeper Insights"/>
+                    </div>
+                    <div class="project m-2">
+                        <a href="https://theandrocoder.github.io/zomato-ui/" target="_blank" class="btn btn-danger">View Project</a>
+                        <img src="project2.jpg" height="100%" width="100%" alt="Zomato UI"/>
+                    </div>
+                    <div class="project m-2">
+                        <a href="https://medium.com/@sachin25041998/developing-a-one-dimensional-generative-adversarial-network-using-tensorflow-72b58db3f89#0d50-c8da7ae23bac" target="_blank" class="btn btn-danger">View Article</a>
+                        <img src="https://miro.medium.com/max/700/1*e1Sr-W4kPmCQdpLdhFyPNQ.png" height="100%" width="100%" alt="One Dimensional GAN"/>
+                    </div>
+                    <div class="project m-2">
+                        <a href="https://github.com/TheAndroCoder?tab=repositories" target="_blank"><i class="fa fa-2x fa-chevron-circle-right"></i>View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex p-3 bg-danger">
+        <p class="text-center text-white">Find me on social media</p>
+        <div class="d-flex justify-content-center">
+            <i class="fa fa-2x fa-facebook text-white"></i>
+            <i class="fa fa-2x fa-github text-white"></i>
+            <i class="fa fa-2x fa-instagram text-white"></i>
+            <i class="fa fa-2x fa-twitter text-white"></i>
+            <i class="fa fa-2x fa-linkedin text-white"></i>
+        </div>
+        <p class="text-center text-white mt-3">Made with <i class="fa fa-heart ml-3"></i>by Sachin Rana</p>
+    </div>
+</body>
+</html>
